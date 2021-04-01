@@ -16,17 +16,6 @@ class App extends Component {
     });
   };
 
-  // setColor = () => {
-  //   const colors = [
-  //     "rgba(235,64,52,0.3)",
-  //     "rgba(29,43,74,0.3)",
-  //     "rgba(69,29,74,0.3)",
-  //     "rgba(163,73,31,0.3)",
-  //   ];
-
-  //   return colors[Math.floor(Math.random() * colors.length)];
-  // };
-
   deleteChars = (charIndex) => {
     //copies array
     const wordList = [...this.state.content.split("")];
@@ -39,7 +28,6 @@ class App extends Component {
   };
 
   render() {
-    // console.log(this.setColor());
     let validation = null;
     if (this.state.long < 5) {
       validation = "Text too short,";
